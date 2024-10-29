@@ -23,3 +23,58 @@ h1{
 header img {
     width: 150px;
 }
+
+.main-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    align-items: flex-start;
+}
+
+.text-container{
+}
+
+/* Contenedor del álbum */
+.album-container {
+    position: relative;
+    width: 50%;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+/* Botones de navegación */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+.left {
+    left: 10px;
+}
+.right {
+    right: 10px;
+}
+
+/* Estilo del slider */
+.slider {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Estilo de cada imagen */
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}

@@ -8,24 +8,51 @@
 </head>
 <body>
     <header>
-        <img src="img/logo.png" alt="Logo de Ortopedia San Rafael">
-        <h1>Ortopedia San Rafael</h1>
-        <h2>Ortopedia y Traumatología</h2>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo de Ortopedia San Rafael">
+            <h1>Ortopedia San Rafael</h1>
+            <h2>Ortopedia y Traumatología</h2>
+        </div>
+        <div class="contacto-container">
+
+        </div>
     </header>
     <main>
         <section>
             <h3>Sobre Nosotros:</h3>
-            <p></p>
+            <p>
+                Ortopedia San Rafael opera edesde hace 7 años. Desde que ingresa o se comunica a nuestra Ortopedia será atendido 
+                por personal idóneo que se concentrará en resolver sus necesidades, ya que contamos con un plantel de Recursos Humanos 
+                capacitados, interdependientes, formadores de la Organización. Servicio de Alquileres: Sillas de Ruedas de la más 
+                amplia variedad inclusive para patologías especiales, Andadadores, Aspiradores Quirúrgicos, Camas Ortopédicas, Muletas, 
+                Portasueros, Mesas para Comer en la Cama, Motor para Colchón antiescaras, etc. Taller de Servicio de Reparaciones y 
+                Mantenimiento: sillas de ruedas, camas ortopédicas.
+            </p>
         </section>
-        <section>
-            <h3>Productos:</h3>
-            <ul>
-                <li>Sillas de Rueda, Muletas, Andadores, Bastones</li>
-                <li>Fajas, Férulas, Corsés, Valvas</li>
-                <li>Plantillas personalizadas, Prótesis para amputados, Órtesis</li>
-                <li>Insumos hospitalarios y productos de apoyo para la rehabilitación</li>
-            </ul>
+        <hr>
+        <section class="main-container">
+            <div class="text-container">
+                <h3>Productos:</h3>
+                <ul>
+                    <li>Sillas de Rueda, Muletas, Andadores, Bastones</li>
+                    <li>Fajas, Férulas, Corsés, Valvas</li>
+                    <li>Plantillas personalizadas, Prótesis para amputados, Órtesis</li>
+                    <li>Insumos hospitalarios y productos de apoyo para la rehabilitación</li>
+                </ul>
+            </div>
+            <div class="album-container">
+                <button class="nav-btn left" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="slider">
+                    <div class="slide"><img src="img/andador.jpg" alt="Foto 2"></div>
+                    <div class="slide"><img src="img/bastones.jpg" alt="Foto 2"></div>
+                    <div class="slide"><img src="img/muletas.jpg" alt="Foto 2"></div>
+                    <div class="slide"><img src="img/protesis.jpg" alt="Foto 2"></div>
+                </div>
+                <button class="nav-btn right" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <script src="script.js"></script>
         </section>
+        <hr>
         <section>
             <h3>Servicios:</h3>
             <p>
@@ -34,6 +61,7 @@
                 soluciones ortopédicas innovadoras.
             </p>
         </section>
+        <hr>
         <section>
             <h3>Información de Contacto</h3>
             <ul>
@@ -43,6 +71,7 @@
                 <li>Email: marcossupervisorbyv@gmail.com</li>
             </ul>
         </section>
+        <hr>
         <section>
             <h3>Experiencia</h3>
             <p>
