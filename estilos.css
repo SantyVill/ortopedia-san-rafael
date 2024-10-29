@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #EFEFEF;
+}
+header{
+    background-color: #F57C00;
+    color: #4A4A4A;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+header h2{
+    font-size: 18px;
+    
+}
+h1{
+    margin: 0;
+    font-size: 24px;
+}
+
+header img {
+    width: 150px;
+}
