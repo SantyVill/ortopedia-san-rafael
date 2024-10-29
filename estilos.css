@@ -113,6 +113,17 @@ header img {
     width: 50%;
 }
 
+.img-container {
+    /* position: relative; */
+    width: 50%;
+    /* max-width: 300px;
+    overflow: hidden; */
+    align-content: end;
+    text-align: right;
+}
+.img-container img{
+    max-width: 50%;
+}
 /* Contenedor del álbum */
 
 .album-container {
