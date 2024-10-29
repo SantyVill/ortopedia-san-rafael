@@ -110,6 +110,7 @@ header img {
 /* Contenedor de texto */
 .text-container {
     flex: 1; /* Toma el espacio disponible */
+    width: 50%;
 }
 
 /* Contenedor del álbum */
