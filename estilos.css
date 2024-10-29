@@ -2,9 +2,20 @@ body{
     margin: 0;
     padding: 0;
     background-color: #EFEFEF;
+    /* background: radial-gradient(circle at left middle, #FFA726, #F57C00); */
+    background:rgb(250 241 219);
+    font-family: 'Euclid', system-ui, sans-serif;
 }
-header{
-    background-color: #F57C00;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background:rgb(255, 178, 105); /* Color de fondo del header */
+    color: #4A4A4A; /* Color del texto */
+}
+/* header{
+    background:rgb(255, 178, 105);
     color: #4A4A4A;
     display: flex;
     flex-direction: column;
@@ -14,6 +25,53 @@ header{
 header h2{
     font-size: 18px;
     
+} */
+
+/* Logo y título alineado a la izquierda */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Información de contacto alineada a la derecha */
+.contacto-container {
+    text-align: right;
+}
+
+.contacto-container h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.contacto-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacto-container li {
+    font-size: 14px;
+}
+
+/* Tamaño de la imagen del logo */
+.logo-container img {
+    width: 100px;
+    margin-bottom: 10px; /* Espacio entre el logo y el título */
+}
+
+/* Ajuste de fuentes del título y subtítulo */
+.logo-container h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.logo-container h2 {
+    font-size: 16px;
+    margin: 5px 0 0;
+}
+main{
+    margin: 0 1em;
 }
 h1{
     margin: 0;
@@ -24,22 +82,27 @@ header img {
     width: 150px;
 }
 
+/* Contenedor principal para alinear los elementos uno al lado del otro */
 .main-container {
     display: flex;
-    justify-content: space-between; 
-    gap: 20px; 
-    align-items: flex-start;
+    justify-content: space-between; /* Espacio entre los contenedores */
+    gap: 20px; /* Espacio entre los elementos */
+    align-items: flex-start; /* Alineación superior de ambos contenedores */
 }
 
-.text-container{
+/* Contenedor de texto */
+.text-container {
+    flex: 1; /* Toma el espacio disponible */
 }
 
 /* Contenedor del álbum */
+
 .album-container {
     position: relative;
     width: 50%;
-    max-width: 500px;
+    max-width: 300px;
     overflow: hidden;
+    margin-right: 4em;
 }
 
 /* Botones de navegación */
@@ -77,4 +140,29 @@ header img {
 .slide img {
     width: 100%;
     display: block;
+}
+
+@media (max-width: 768px) {
+    /* Cambiar el diseño de los elementos dentro de .main-container */
+    .main-container {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        align-items: center; /* Centra los elementos */
+    }
+
+    /* Ajustar el tamaño de album-container para pantallas pequeñas */
+    .album-container {
+        max-width: 100%; /* Toma el 100% del ancho del contenedor */
+        margin-top: 20px; /* Añadir un espacio entre las secciones */
+    }
+
+    /* Ajuste de tamaño del slider para que se vea mejor en móviles */
+    .slider, .slide {
+        min-width: 100%;
+    }
+
+    /* Ajustar los botones de navegación en dispositivos móviles */
+    .nav-btn {
+        font-size: 20px; /* Reducir el tamaño de los botones */
+        padding: 8px; /* Ajustar el padding de los botones */
+    }
 }

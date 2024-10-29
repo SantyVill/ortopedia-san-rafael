@@ -19,4 +19,20 @@ function moveSlide(direction) {
     // Desplazar el slider
     const slider = document.querySelector('.slider');
     slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+    resetSlideInterval();
 }
+
+// Función para iniciar el intervalo automático
+function startSlideInterval() {
+    slideInterval = setInterval(() => moveSlide(1), 5000);
+}
+
+// Función para reiniciar el intervalo automático
+function resetSlideInterval() {
+    clearInterval(slideInterval); // Detener el intervalo actual
+    startSlideInterval(); // Iniciar un nuevo intervalo
+}
+
+// Iniciar el intervalo automático cuando la página carga
+startSlideInterval();
