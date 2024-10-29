@@ -26,17 +26,20 @@ header h2{
     font-size: 18px;
     
 } */
-
+.icono {
+    width: 30px; /* Tamaño del icono */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
 /* Logo y título alineado a la izquierda */
 .logo-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 /* Información de contacto alineada a la derecha */
 .contacto-container {
-    text-align: right;
+    text-align: center;
 }
 
 .contacto-container h3 {
@@ -52,6 +55,20 @@ header h2{
 
 .contacto-container li {
     font-size: 14px;
+    display: flex; /* Usamos flex para alinear icono y texto */
+    align-items: center; /* Centra verticalmente icono y texto */
+    margin: 10px 0; /* Añade un poco de espacio entre los elementos de la lista */
+}
+.contact-info {
+    display: flex; /* Usamos flex para crear dos columnas */
+    justify-content: center; /* Centra las columnas */
+    margin-top: 10px; /* Espacio arriba de las columnas */
+}
+.info-column {
+    display: flex; /* Flex para alinear iconos y texto */
+    flex-direction: column; /* Coloca los elementos en columnas */
+    align-items: center; /* Centra los elementos dentro de cada columna */
+    margin: 0 20px; /* Espacio horizontal entre las columnas */
 }
 
 /* Tamaño de la imagen del logo */
