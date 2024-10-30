@@ -171,6 +171,57 @@ header img {
     display: block;
 }
 
+.modulo-container {
+    /* position: relative; */
+    width: 50%;
+    /* max-width: 300px;
+    overflow: hidden; */
+    align-content: end;
+    text-align: right;
+    display: inline-flex;
+}
+.modulo-container img{
+    max-width: 50%;
+    margin-left: 3px;
+}
+
+.titulo-modulos{
+    font-size: x-large;
+    text-align: center;
+}
+
+.modulos p {
+    font-size: large;
+}
+
+.palabras{
+    display: flex;
+    justify-content: space-between;
+}
+.palabra {
+    background-color: rgb(252, 232, 183);
+    padding: 0.31em;
+    width: 30%;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    border: solid black 1px;
+    box-shadow: black 3px 3px 3px;
+}
+.productos{
+    display: flex;
+    justify-content: space-around;
+}
+.producto {
+    background-color: rgb(183 232 252);
+    padding: 0.31em;
+    width: 30%;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    border: solid black 1px;
+    box-shadow: black 3px 3px 3px;
+}
 @media (max-width: 768px) {
     /* Cambiar el diseño de los elementos dentro de .main-container */
     .main-container {
