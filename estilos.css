@@ -10,9 +10,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 5px;
     background:rgb(255, 178, 105); /* Color de fondo del header */
-    color: #4A4A4A; /* Color del texto */
 }
 /* header{
     background:rgb(255, 178, 105);
@@ -26,15 +25,34 @@ header h2{
     font-size: 18px;
     
 } */
-.icono {
-    width: 30px; /* Tamaño del icono */
-    margin-right: 10px; /* Espacio entre el icono y el texto */
-}
 /* Logo y título alineado a la izquierda */
 .logo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 2em;
+}
+
+/* Tamaño de la imagen del logo */
+.logo-container img {
+    width: 140px;
+    filter: drop-shadow(3px 3px 5px #000000);
+    /* margin-bottom: 10px; */
+}
+
+/* Ajuste de fuentes del título y subtítulo */
+.logo-container h1 {
+    font-size: 24px;
+    filter: drop-shadow(2px 2px 2px #000000);
+    color: white;
+    margin: 0;
+}
+
+.logo-container h2 {
+    font-size: 16px;
+    
+    color: #4d4d4d; /* Color del texto */
+    margin: 5px 0 0;
 }
 
 /* Información de contacto alineada a la derecha */
@@ -70,33 +88,28 @@ header h2{
     align-items: center; /* Centra los elementos dentro de cada columna */
     margin: 0 20px; /* Espacio horizontal entre las columnas */
 }
-
-/* Tamaño de la imagen del logo */
-.logo-container img {
-    width: 100px;
-    margin-bottom: 10px; /* Espacio entre el logo y el título */
-}
-
-/* Ajuste de fuentes del título y subtítulo */
-.logo-container h1 {
-    font-size: 24px;
-    margin: 0;
-}
-
-.logo-container h2 {
-    font-size: 16px;
-    margin: 5px 0 0;
+.icono {
+    width: 30px; /* Tamaño del icono */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
 }
 main{
     margin: 0 1em;
 }
-h1{
-    margin: 0;
-    font-size: 24px;
+
+section {
+    border: #000000 solid 0.5px;
+    border-radius: 10px;
+    margin: 2em 0;
+    padding: 1em;
+    background-color: #EFEFEF;
+    box-shadow: black 3px 3px 5px;
 }
 
-header img {
-    width: 150px;
+.titulo-h3{
+    text-align: center;
+    margin-top: 0;
+    font-size: x-large;
+    color: rgb(31, 31, 31);
 }
 
 /* Contenedor principal para alinear los elementos uno al lado del otro */
@@ -185,10 +198,6 @@ header img {
     margin-left: 3px;
 }
 
-.titulo-modulos{
-    font-size: x-large;
-    text-align: center;
-}
 
 .modulos p {
     font-size: large;
@@ -196,7 +205,9 @@ header img {
 
 .palabras{
     display: flex;
-    justify-content: space-between;
+    margin: 1em 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .palabra {
     background-color: rgb(252, 232, 183);
