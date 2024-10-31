@@ -35,7 +35,7 @@ header h2{
 
 /* Tamaño de la imagen del logo */
 .logo-container img {
-    width: 140px;
+    width: 200px;
     filter: drop-shadow(3px 3px 5px #000000);
     /* margin-bottom: 10px; */
 }
@@ -87,6 +87,23 @@ header h2{
     flex-direction: column; /* Coloca los elementos en columnas */
     align-items: center; /* Centra los elementos dentro de cada columna */
     margin: 0 20px; /* Espacio horizontal entre las columnas */
+}
+.info-column li {
+    display: flex;
+    align-items: center; /* Alinea el icono y el texto verticalmente */
+    margin: 10px 0; /* Añade un poco de espacio entre los elementos de la lista */
+}
+
+.info-column a {
+    display: flex;
+    align-items: center; /* Alinea el icono y el texto verticalmente */
+    text-decoration: none; /* Remueve el subrayado del enlace */
+    color: inherit; /* Mantiene el color de texto */
+}
+
+.icono {
+    width: 24px; /* Tamaño del icono ajustable */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
 }
 .icono {
     width: 30px; /* Tamaño del icono */
@@ -148,6 +165,12 @@ section {
 }
 
 /* Botones de navegación */
+.negocio-container{
+    width: 50%;
+}
+.negocio {
+    width: 100%;
+}
 .nav-btn {
     position: absolute;
     top: 50%;
@@ -233,27 +256,148 @@ section {
     border: solid black 1px;
     box-shadow: black 3px 3px 3px;
 }
+.logomara{
+    width: 50%;
+}
+
+footer {
+    background-color: rgb(255, 178, 105);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-social {
+    margin: 10px 0;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    border: none;
+    text-decoration: none;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-links {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.map-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 768px) {
-    /* Cambiar el diseño de los elementos dentro de .main-container */
-    .main-container {
-        flex-direction: column; /* Coloca los elementos en una columna */
-        align-items: center; /* Centra los elementos */
+    /* Header en móvil */
+    header {
+        flex-direction: column;
+        align-items: center;
     }
 
-    /* Ajustar el tamaño de album-container para pantallas pequeñas */
+    .text-container {
+        width: 90%;
+    }
     .album-container {
-        max-width: 100%; /* Toma el 100% del ancho del contenedor */
-        margin-top: 20px; /* Añadir un espacio entre las secciones */
+        width: 90%;
     }
 
-    /* Ajuste de tamaño del slider para que se vea mejor en móviles */
-    .slider, .slide {
-        min-width: 100%;
+    .logo-container {
+        margin-left: 0;
     }
 
-    /* Ajustar los botones de navegación en dispositivos móviles */
-    .nav-btn {
-        font-size: 20px; /* Reducir el tamaño de los botones */
-        padding: 8px; /* Ajustar el padding de los botones */
+    /* Contenedores principales */
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-column {
+        margin: 10px 0;
+    }
+
+    .album-container,
+    .modulo-container {
+        width: 100%;
+    }
+
+    /* Ajuste de tamaños de fuente */
+    .logo-container h1 {
+        font-size: 20px;
+    }
+
+    .logo-container h2 {
+        font-size: 14px;
+    }
+
+    .titulo-h3 {
+        font-size: large;
+    }
+
+    
+    .negocio-container{
+        width: 90%;
+    }
+    /* Ajustes específicos para imágenes */
+    .negocio,
+    .modulo-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body{
+        background-color: #000000;
+    }
+    /* Ajustes para pantallas muy pequeñas */
+    header {
+        padding: 10px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .info-column {
+        align-items: center;
+    }
+
+    /* Tamaños de fuentes adicionales */
+    .logo-container h1 {
+        font-size: 18px;
+    }
+
+    .logo-container h2 {
+        font-size: 12px;
+    }
+
+    .titulo-h3 {
+        font-size: medium;
+    }
+
+    .contact-info li {
+        font-size: 12px;
     }
 }
