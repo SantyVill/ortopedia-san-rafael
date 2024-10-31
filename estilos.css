@@ -368,9 +368,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-    body{
-        background-color: #000000;
-    }
     /* Ajustes para pantallas muy pequeñas */
     header {
         padding: 10px;
@@ -399,5 +396,10 @@ footer {
 
     .contact-info li {
         font-size: 12px;
+    }
+
+    .album-container{
+        text-align: center;
+        margin: 0 auto;
     }
 }
