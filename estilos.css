@@ -142,7 +142,9 @@ section {
     flex: 1; /* Toma el espacio disponible */
     width: 50%;
 }
-
+.descripcion{
+    font-size: 2vw;
+}
 .img-container {
     /* position: relative; */
     width: 50%;
@@ -223,7 +225,7 @@ section {
 
 
 .modulos p {
-    font-size: large;
+    font-size: 1.5vw;
 }
 
 .palabras{
@@ -309,6 +311,9 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.fijo{
+    cursor: default;
+}
 @media (max-width: 768px) {
     /* Header en móvil */
     header {
@@ -365,6 +370,13 @@ footer {
         width: 100%;
         height: auto;
     }
+    
+    .modulos p {
+        font-size: 1.5vw;
+    }
+    .descripcion{
+        font-size: 2vw;
+    }
 }
 
 @media (max-width: 480px) {
@@ -379,6 +391,8 @@ footer {
 
     .info-column {
         align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     /* Tamaños de fuentes adicionales */
@@ -401,5 +415,11 @@ footer {
     .album-container{
         text-align: center;
         margin: 0 auto;
+    }
+    .telefonos{
+    }
+    .telefonos li{
+        align-items: center;
+        display: inline-block;
     }
 }
