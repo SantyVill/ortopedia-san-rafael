@@ -375,12 +375,15 @@ footer {
         font-size: 1.5vw;
     }
     .descripcion{
-        font-size: 2vw;
+        font-size: 3vmin;
     }
 }
 
 @media (max-width: 480px) {
     /* Ajustes para pantallas muy pequeñas */
+    .contacto-container h3{
+        display: none;
+    }
     header {
         padding: 10px;
     }
@@ -416,10 +419,16 @@ footer {
         text-align: center;
         margin: 0 auto;
     }
-    .telefonos{
-    }
     .telefonos li{
         align-items: center;
         display: inline-block;
+    }
+    
+    .modulos p {
+        font-size: 1.5vw;
+    }
+    .descripcion{
+        /* font-size: 3vw; */
+        font-size: 3vmin;
     }
 }
