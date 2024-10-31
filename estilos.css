@@ -315,6 +315,9 @@ footer {
     cursor: default;
 }
 @media (max-width: 768px) {
+    .contacto-container h3{
+        display: none;
+    }   
     /* Header en móvil */
     header {
         flex-direction: column;
@@ -372,10 +375,37 @@ footer {
     }
     
     .modulos p {
-        font-size: 1.5vw;
+        font-size: 3vmin;
     }
     .descripcion{
         font-size: 3vmin;
+    }
+    .text-container{
+        width: 100%;
+    }
+
+    .palabras{
+        /* display: flex;
+        margin: 1em 0;
+        justify-content: space-evenly;
+        flex-wrap: wrap; */
+    }
+    .palabra {
+        font-size: 2.8vmin;
+        width: 26%;
+    }
+    
+    .productos{
+        /* display: flex;
+        justify-content: space-around; */
+    }
+    .producto {
+        font-size: 3vmin;
+        width: 40%;
+    }
+    .clientes{
+        width: 45%;
+        margin: 0;
     }
 }
 
@@ -410,6 +440,9 @@ footer {
     .titulo-h3 {
         font-size: medium;
     }
+    .text-container{
+        width: 100%;
+    }
 
     .contact-info li {
         font-size: 12px;
@@ -425,10 +458,26 @@ footer {
     }
     
     .modulos p {
-        font-size: 1.5vw;
+        font-size: 3vmin;
     }
     .descripcion{
         /* font-size: 3vw; */
         font-size: 3vmin;
+    }
+
+    .palabras{
+    }
+    .palabra {
+        width: 29%;
+    }
+    .clientes{
+        width: 45%;
+        margin: 0;
+    }
+    
+    .productos{
+    }
+    .producto {
+        font-size: 2vmin;
     }
 }
