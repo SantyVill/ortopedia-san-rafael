@@ -58,6 +58,23 @@ header {
     padding: 0;
     margin: 0;
 }
+.info-column-sitio {
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+}
+.info-column-sitio a {
+    font-size: 14px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+.info-column-sitio img {
+    width: 30px; 
+    margin-right: 10px;
+}
 
 .contacto-container li {
     font-size: 14px;
