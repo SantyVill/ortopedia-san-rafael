@@ -11,20 +11,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background:rgb(255, 178, 105); /* Color de fondo del header */
+    background:rgb(255, 178, 105); 
 }
-/* header{
-    background:rgb(255, 178, 105);
-    color: #4A4A4A;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-header h2{
-    font-size: 18px;
-    
-} */
 /* Logo y título alineado a la izquierda */
 .logo-container {
     display: flex;
@@ -42,16 +30,16 @@ header h2{
 
 /* Ajuste de fuentes del título y subtítulo */
 .logo-container h1 {
-    font-size: 24px;
+    font-size: 28px;
     filter: drop-shadow(2px 2px 2px #000000);
     color: white;
     margin: 0;
 }
 
 .logo-container h2 {
-    font-size: 16px;
+    font-size: 20px;
     
-    color: #4d4d4d; /* Color del texto */
+    color: #4d4d4d; 
     margin: 5px 0 0;
 }
 
@@ -73,41 +61,41 @@ header h2{
 
 .contacto-container li {
     font-size: 14px;
-    display: flex; /* Usamos flex para alinear icono y texto */
-    align-items: center; /* Centra verticalmente icono y texto */
-    margin: 10px 0; /* Añade un poco de espacio entre los elementos de la lista */
+    display: flex; 
+    align-items: center; 
+    margin: 10px 0; 
 }
 .contact-info {
-    display: flex; /* Usamos flex para crear dos columnas */
-    justify-content: center; /* Centra las columnas */
-    margin-top: 10px; /* Espacio arriba de las columnas */
+    display: flex; 
+    justify-content: center; 
+    margin-top: 10px; 
 }
 .info-column {
-    display: flex; /* Flex para alinear iconos y texto */
-    flex-direction: column; /* Coloca los elementos en columnas */
-    align-items: center; /* Centra los elementos dentro de cada columna */
-    margin: 0 20px; /* Espacio horizontal entre las columnas */
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 0 20px; 
 }
 .info-column li {
     display: flex;
-    align-items: center; /* Alinea el icono y el texto verticalmente */
-    margin: 10px 0; /* Añade un poco de espacio entre los elementos de la lista */
+    align-items: center; 
+    margin: 10px 0; 
 }
 
 .info-column a {
     display: flex;
-    align-items: center; /* Alinea el icono y el texto verticalmente */
-    text-decoration: none; /* Remueve el subrayado del enlace */
-    color: inherit; /* Mantiene el color de texto */
+    align-items: center; 
+    text-decoration: none; 
+    color: inherit; 
 }
 
 .icono {
-    width: 24px; /* Tamaño del icono ajustable */
-    margin-right: 10px; /* Espacio entre el icono y el texto */
+    width: 24px; 
+    margin-right: 10px;
 }
 .icono {
-    width: 30px; /* Tamaño del icono */
-    margin-right: 10px; /* Espacio entre el icono y el texto */
+    width: 30px; 
+    margin-right: 10px; 
 }
 main{
     margin: 0 1em;
@@ -132,24 +120,21 @@ section {
 /* Contenedor principal para alinear los elementos uno al lado del otro */
 .main-container {
     display: flex;
-    justify-content: space-between; /* Espacio entre los contenedores */
-    gap: 20px; /* Espacio entre los elementos */
-    align-items: flex-start; /* Alineación superior de ambos contenedores */
+    justify-content: space-between; 
+    gap: 20px; 
+    align-items: flex-start; 
 }
 
 /* Contenedor de texto */
 .text-container {
-    flex: 1; /* Toma el espacio disponible */
+    flex: 1; 
     width: 50%;
 }
 .descripcion{
     font-size: 2vw;
 }
 .img-container {
-    /* position: relative; */
     width: 50%;
-    /* max-width: 300px;
-    overflow: hidden; */
     align-content: end;
     text-align: right;
 }
@@ -344,19 +329,18 @@ footer {
     .info-column {
         margin: 10px 0;
     }
-
+    
+    .album-container{
+        text-align: center;
+        margin: 0 auto;
+    }
     .album-container,
     .modulo-container {
         width: 100%;
     }
 
-    /* Ajuste de tamaños de fuente */
-    .logo-container h1 {
-        font-size: 20px;
-    }
-
     .logo-container h2 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .titulo-h3 {
@@ -384,21 +368,15 @@ footer {
         width: 100%;
     }
 
-    .palabras{
-        /* display: flex;
-        margin: 1em 0;
-        justify-content: space-evenly;
-        flex-wrap: wrap; */
-    }
+    /* .palabras{
+    } */
     .palabra {
         font-size: 2.8vmin;
         width: 26%;
     }
     
-    .productos{
-        /* display: flex;
-        justify-content: space-around; */
-    }
+    /* .productos{
+    } */
     .producto {
         font-size: 3vmin;
         width: 40%;
@@ -406,6 +384,11 @@ footer {
     .clientes{
         width: 45%;
         margin: 0;
+    }
+    
+    /* Ajuste de fuentes del título y subtítulo */
+    .logo-container h1 {
+        font-size: 25px;
     }
 }
 
@@ -428,13 +411,8 @@ footer {
         margin-bottom: 0;
     }
 
-    /* Tamaños de fuentes adicionales */
-    .logo-container h1 {
-        font-size: 18px;
-    }
-
     .logo-container h2 {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .titulo-h3 {
@@ -479,5 +457,11 @@ footer {
     }
     .producto {
         font-size: 2vmin;
+    }
+    
+
+    /* Ajuste de fuentes del título y subtítulo */
+    .logo-container h1 {
+        font-size: 26px;
     }
 }
