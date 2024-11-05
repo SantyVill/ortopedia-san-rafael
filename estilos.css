@@ -443,8 +443,8 @@ footer {
         font-size: 3vmin;
     }
 
-    .palabras{
-    }
+    /* .palabras{
+    } */
     .palabra {
         width: 29%;
     }
@@ -453,8 +453,8 @@ footer {
         margin: 0;
     }
     
-    .productos{
-    }
+    /* .productos{
+    } */
     .producto {
         font-size: 2vmin;
     }
